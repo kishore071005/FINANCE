@@ -188,7 +188,7 @@ function ExpensesPage() {
         <label>
           Department filter
           <input
-            placeholder="e.g. Engineering"
+            placeholder="e.g. Technology"
             value={departmentFilter}
             onChange={(e) => setDepartmentFilter(e.target.value)}
           />
@@ -261,7 +261,7 @@ function ExpensesPage() {
           <label>Amount<input name="amount" placeholder="e.g. 99.99" value={form.amount} onChange={handleChange} /></label>
           <label>Date<input type="date" name="date" value={form.date} onChange={handleChange} /></label>
           <label>Vendor<input name="vendor" value={form.vendor} onChange={handleChange} /></label>
-          <label>Department<input name="department" placeholder="e.g. Engineering" value={form.department} onChange={handleChange} /></label>
+          <label>Department<input name="department" placeholder="e.g. Technology" value={form.department} onChange={handleChange} /></label>
           <label>Payment Method (optional)<input name="paymentMethod" value={form.paymentMethod} onChange={handleChange} /></label>
           <label>Status (optional)<input name="status" value={form.status} onChange={handleChange} /></label>
           <label>Receipt (optional)<input name="receipt" value={form.receipt} onChange={handleChange} /></label>

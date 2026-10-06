@@ -205,7 +205,7 @@ function DomainsPage() {
         <label>
           Registrar filter
           <input
-            placeholder="e.g. Namecheap"
+            placeholder="e.g. GoDaddy"
             value={registrarFilter}
             onChange={(e) => setRegistrarFilter(e.target.value)}
           />

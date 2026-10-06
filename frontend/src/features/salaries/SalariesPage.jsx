@@ -166,7 +166,7 @@ function SalariesPage() {
         <label>
           Department filter
           <input
-            placeholder="e.g. Engineering"
+            placeholder="e.g. Technology"
             value={departmentFilter}
             onChange={(e) => setDepartmentFilter(e.target.value)}
           />
@@ -229,7 +229,7 @@ function SalariesPage() {
         <form onSubmit={handleSubmit}>
           <label>Employee<input name="employee" value={form.employee} onChange={handleChange} /></label>
           <label>Salary / Stipend (monthly)<input name="salary" placeholder="e.g. 5000.00" value={form.salary} onChange={handleChange} /></label>
-          <label>Department<input name="department" placeholder="e.g. Engineering" value={form.department} onChange={handleChange} /></label>
+          <label>Department<input name="department" placeholder="e.g. Technology" value={form.department} onChange={handleChange} /></label>
           <label>Employment Type (optional)<input name="employmentType" value={form.employmentType} onChange={handleChange} /></label>
           <label>Deductions (optional)<input name="deductions" placeholder="e.g. 500.00" value={form.deductions} onChange={handleChange} /></label>
           <label>Payment Status (optional)<input name="paymentStatus" value={form.paymentStatus} onChange={handleChange} /></label>

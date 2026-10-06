@@ -178,7 +178,7 @@ function VendorsPage() {
         <label>
           Name filter
           <input
-            placeholder="e.g. Acme"
+            placeholder="e.g. Acme Corp"
             value={nameFilter}
             onChange={(e) => setNameFilter(e.target.value)}
           />
