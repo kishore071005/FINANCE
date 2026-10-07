@@ -42,6 +42,11 @@ body {
   flex-direction: column;
   position: relative;
   overflow-x: clip;
+  background-color: #fbfdff;
+  background-image:
+    linear-gradient(to right, rgba(37, 99, 235, 0.055) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(37, 99, 235, 0.055) 1px, transparent 1px);
+  background-size: 40px 40px;
 }
 
 /* Ambient gradient orbs (Harvik-style blurred glows) */
@@ -341,10 +346,53 @@ body {
   color: var(--slate-800);
 }
 
-/* ---------- Hero (home page) ---------- */
+/* ---------- Hero (home page, Harvik-style grid backdrop) ---------- */
 .hero {
   text-align: center;
-  padding: 2.5rem 1rem 1rem;
+  padding: 3rem 1rem 2rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: #fbfdff;
+  background-image:
+    linear-gradient(to right, rgba(37, 99, 235, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(37, 99, 235, 0.07) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 60% 65% at 50% 28%,
+    rgba(219, 234, 254, 0.95),
+    rgba(219, 234, 254, 0) 70%
+  );
+  pointer-events: none;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-logo-card {
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  padding: 1.25rem 2.5rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.1);
+  margin-bottom: 1.25rem;
+  animation: popIn 0.5s ease both;
+}
+
+.hero-logo-card img {
+  height: 72px;
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
 
 .hero h2 {

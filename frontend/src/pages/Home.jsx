@@ -51,10 +51,15 @@ function Home() {
   return (
     <div className="home-page">
       <div className="hero">
-        <span className="brand-badge">
-          <span className="pulse-dot" />
-          Financial intelligence, engineered
-        </span>
+        <div className="hero-logo-card">
+          <img src="/harvik-logo.jpeg" alt="HARVIK — Innovate • Integrate • Elevate" />
+        </div>
+        <div>
+          <span className="brand-badge">
+            <span className="pulse-dot" />
+            Financial intelligence, engineered
+          </span>
+        </div>
         <h2 style={{ marginTop: '1rem' }}>Clarity for Every Rupee In and Out.</h2>
         <p>Revenue, spending, salaries, budgets and reports &mdash; one dashboard, live from real data.</p>
         <div className="hero-ctas">
